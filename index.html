@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>花都捕王-都市悬疑探案故事与人物档案专题</title>
+<meta name="description" content="花都捕王专题页，梳理都市悬疑探案故事的世界观、主要人物、案件线索、阅读顺序与常见问题，帮助读者快速了解花都捕王的剧情看点与人物关系。">
+<meta name="keywords" content="花都捕王,花都捕王人物,都市悬疑,探案故事,花都捕王剧情,悬疑小说">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --ink:#12151c;
+    --ink-2:#1c2230;
+    --paper:#f5f2ea;
+    --paper-2:#eae4d6;
+    --gold:#c8a45c;
+    --gold-2:#e3c47f;
+    --crimson:#a8323c;
+    --text:#242a35;
+    --muted:#6b7280;
+    --line:rgba(18,21,28,.12);
+    --radius:14px;
+    --shadow:0 12px 32px rgba(18,21,28,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Songti SC","SimSun","Noto Serif SC",Georgia,"Microsoft YaHei",serif;
+    background:var(--paper);
+    color:var(--text);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{width:min(1160px,92%);margin:0 auto;}
+
+  /* ---------- 顶栏 ---------- */
+  .topbar{
+    background:var(--ink);
+    color:#cfd4de;
+    font-size:.82rem;
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+    letter-spacing:.04em;
+  }
+  .topbar .wrap{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:.5rem 0;gap:1rem;flex-wrap:wrap;
+  }
+  .topbar span.dim{color:#8b93a5;}
+
+  /* ---------- 页眉 ---------- */
+  header.site{
+    background:linear-gradient(160deg,#12151c 0%,#1c2230 55%,#252c3d 100%);
+    color:#f2efe7;
+    position:relative;
+    overflow:hidden;
+  }
+  header.site::after{
+    content:"";
+    position:absolute;inset:0;
+    background:
+      radial-gradient(circle at 82% 18%,rgba(200,164,92,.22),transparent 46%),
+      radial-gradient(circle at 8% 92%,rgba(168,50,60,.20),transparent 42%);
+    pointer-events:none;
+  }
+  .masthead{
+    position:relative;z-index:2;
+    display:flex;align-items:flex-end;justify-content:space-between;
+    gap:1.4rem;padding:2.6rem 0 1.6rem;flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;gap:.9rem;}
+  .brand-mark{
+    width:54px;height:54px;flex:0 0 auto;
+    border:1.5px solid var(--gold);
+    border-radius:10px;
+    display:grid;place-items:center;
+    font-size:1.45rem;font-weight:700;color:var(--gold-2);
+    background:rgba(200,164,92,.08);
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  .brand h1{
+    font-size:clamp(1.5rem,3.4vw,2.15rem);
+    letter-spacing:.12em;
+    font-weight:700;
+    line-height:1.2;
+  }
+  .brand p{
+    font-size:.78rem;color:#9aa3b6;letter-spacing:.28em;
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+    margin-top:.28rem;
+  }
+  .masthead-meta{
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+    font-size:.8rem;color:#9aa3b6;
+    text-align:right;line-height:1.9;
+  }
+  .masthead-meta strong{color:var(--gold-2);font-weight:600;}
+
+  /* ---------- 导航 ---------- */
+  nav.main{
+    position:relative;z-index:2;
+    border-top:1px solid rgba(255,255,255,.10);
+    background:rgba(0,0,0,.18);
+  }
+  nav.main ul{
+    display:flex;gap:.2rem;list-style:none;
+    overflow-x:auto;
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+    font-size:.9rem;
+  }
+  nav.main a{
+    display:block;padding:1rem 1.05rem;
+    color:#c9cfdb;white-space:nowrap;
+    border-bottom:2px solid transparent;
+    transition:.2s;
+  }
+  nav.main a:hover,nav.main a.on{
+    color:#fff;border-bottom-color:var(--gold);
+    background:rgba(200,164,92,.08);
+  }
+
+  /* ---------- 首屏 ---------- */
+  .hero{
+    background:var(--paper-2);
+    border-bottom:1px solid var(--line);
+    padding:2.6rem 0 2.4rem;
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.35fr .95fr;gap:2.4rem;align-items:start;
+  }
+  .hero h2{
+    font-size:clamp(1.35rem,2.6vw,1.75rem);
+    line-height:1.5;color:var(--ink);
+    letter-spacing:.02em;
+  }
+  .hero h2 em{
+    font-style:normal;color:var(--crimson);
+    border-bottom:3px solid rgba(168,50,60,.25);
+  }
+  .hero p.lead{margin-top:1rem;color:#3d4553;font-size:1rem;}
+  .hero-kv{
+    margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:.6rem;
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;font-size:.8rem;
+  }
+  .kv{
+    background:#fff;border:1px solid var(--line);border-radius:999px;
+    padding:.38rem .9rem;color:#4b5364;
+  }
+  .hero-aside{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:1.4rem 1.4rem 1.2rem;box-shadow:var(--shadow);
+  }
+  .hero-aside h3{
+    font-size:1rem;color:var(--ink);letter-spacing:.06em;
+    padding-bottom:.6rem;border-bottom:1px dashed var(--line);
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  .hero-aside ol{list-style:none;margin-top:.8rem;}
+  .hero-aside li{
+    display:flex;gap:.7rem;align-items:baseline;
+    padding:.55rem 0;border-bottom:1px solid rgba(18,21,28,.06);
+    font-size:.9rem;
+  }
+  .hero-aside li:last-child{border-bottom:0;}
+  .hero-aside li b{
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+    color:var(--gold);
+    font-size:.78rem;letter-spacing:.06em;
+    flex:0 0 auto;
+  }
+  .hero-aside li span{color:#3d4553;}
+
+  /* ---------- 通用区块 ---------- */
+  section.block{padding:3rem 0;}
+  section.block.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .sec-head{
+    display:flex;align-items:flex-end;justify-content:space-between;
+    gap:1rem;flex-wrap:wrap;margin-bottom:1.8rem;
+  }
+  .sec-head h2{
+    font-size:clamp(1.2rem,2.2vw,1.5rem);
+    color:var(--ink);letter-spacing:.06em;
+    position:relative;padding-left:.95rem;
+  }
+  .sec-head h2::before{
+    content:"";position:absolute;left:0;top:.28em;bottom:.28em;
+    width:4px;border-radius:2px;
+    background:linear-gradient(180deg,var(--gold),var(--crimson));
+  }
+  .sec-head p{
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+    font-size:.83rem;color:var(--muted);max-width:52ch;
+  }
+
+  /* ---------- 人物卡 ---------- */
+  .people{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;}
+  .person{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:1.3rem 1.25rem;transition:.25s;position:relative;overflow:hidden;
+  }
+  .person::before{
+    content:"";position:absolute;left:0;top:0;height:3px;width:100%;
+    background:linear-gradient(90deg,var(--gold),transparent);
+    opacity:0;transition:.25s;
+  }
+  .person:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(200,164,92,.5);}
+  .person:hover::before{opacity:1;}
+  .person .role{
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+    font-size:.72rem;letter-spacing:.18em;color:var(--crimson);
+  }
+  .person h3{font-size:1.08rem;color:var(--ink);margin:.45rem 0 .55rem;letter-spacing:.04em;}
+  .person p{font-size:.9rem;color:#4b5364;}
+  .person .tags{
+    margin-top:.9rem;display:flex;flex-wrap:wrap;gap:.4rem;
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;font-size:.72rem;
+  }
+  .person .tags span{
+    background:var(--paper-2);border-radius:6px;padding:.2rem .55rem;color:#5a6272;
+  }
+
+  /* ---------- 案件线索时间线 ---------- */
+  .threads{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.4rem;}
+  .thread{
+    border-left:3px solid var(--gold);
+    padding:.2rem 0 .2rem 1.1rem;
+  }
+  .thread h3{
+    font-size:1.02rem;color:var(--ink);margin-bottom:.5rem;letter-spacing:.04em;
+  }
+  .thread p{font-size:.9rem;color:#4b5364;}
+  .thread ul{margin-top:.7rem;list-style:none;font-size:.87rem;color:#4b5364;}
+  .thread ul li{
+    position:relative;padding-left:1rem;margin-bottom:.35rem;
+  }
+  .thread ul li::before{
+    content:"—";position:absolute;left:0;color:var(--gold);
+  }
+
+  /* ---------- 阅读指引 ---------- */
+  .guide{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:1.2rem;counter-reset:g;
+  }
+  .guide-item{
+    background:var(--paper-2);border-radius:var(--radius);
+    padding:1.35rem 1.25rem;position:relative;
+    border:1px solid rgba(18,21,28,.06);
+  }
+  .guide-item::before{
+    counter-increment:g;content:counter(g,decimal-leading-zero);
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+    font-size:1.6rem;font-weight:700;color:rgba(200,164,92,.55);
+    display:block;line-height:1;margin-bottom:.6rem;
+  }
+  .guide-item h3{font-size:1rem;color:var(--ink);margin-bottom:.45rem;}
+  .guide-item p{font-size:.88rem;color:#4b5364;}
+
+  /* ---------- 看点列表 ---------- */
+  .highlights{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.4rem;}
+  .hl{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:1.4rem 1.35rem;
+  }
+  .hl h3{
+    font-size:1.02rem;color:var(--ink);margin-bottom:.6rem;
+    display:flex;align-items:center;gap:.55rem;
+  }
+  .hl h3::before{
+    content:"";width:8px;height:8px;border-radius:2px;flex:0 0 auto;
+    background:var(--crimson);transform:rotate(45deg);
+  }
+  .hl p{font-size:.9rem;color:#4b5364;}
+  .hl p + p{margin-top:.6rem;}
+
+  /* ---------- 侧栏 + 正文双栏 ---------- */
+  .split{
+    display:grid;grid-template-columns:1.6fr .95fr;gap:2.4rem;align-items:start;
+  }
+  .article-body h3{
+    font-size:1.05rem;color:var(--ink);margin:1.6rem 0 .55rem;letter-spacing:.03em;
+  }
+  .article-body h3:first-child{margin-top:0;}
+  .article-body p{font-size:.94rem;color:#3d4553;margin-bottom:.5rem;}
+  .article-body p + p{margin-top:.55rem;}
+  .article-body ul{margin:.6rem 0 .6rem 1.1rem;font-size:.93rem;color:#3d4553;}
+  .article-body li{margin-bottom:.35rem;}
+
+  .side-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:1.3rem 1.25rem;margin-bottom:1.3rem;
+  }
+  .side-card h3{
+    font-size:.95rem;color:var(--ink);letter-spacing:.06em;
+    padding-bottom:.55rem;border-bottom:1px dashed var(--line);
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  .side-card ul{list-style:none;margin-top:.75rem;font-size:.87rem;color:#4b5364;}
+  .side-card li{
+    padding:.42rem 0;border-bottom:1px solid rgba(18,21,28,.05);
+    display:flex;justify-content:space-between;gap:.8rem;
+  }
+  .side-card li:last-child{border-bottom:0;}
+  .side-card li span:last-child{color:var(--muted);flex:0 0 auto;font-size:.8rem;}
+  .side-card p.note{font-size:.85rem;color:#4b5364;margin-top:.7rem;}
+
+  /* ---------- FAQ ---------- */
+  .faq{display:grid;gap:.8rem;}
+  details.q{
+    background:#fff;border:1px solid var(--line);border-radius:12px;
+    padding:1rem 1.15rem;transition:.2s;
+  }
+  details.q[open]{border-color:rgba(200,164,92,.55);box-shadow:0 8px 22px rgba(18,21,28,.07);}
+  details.q summary{
+    cursor:pointer;list-style:none;
+    font-size:.98rem;color:var(--ink);font-weight:600;
+    display:flex;justify-content:space-between;gap:1rem;align-items:flex-start;
+  }
+  details.q summary::-webkit-details-marker{display:none;}
+  details.q summary::after{
+    content:"+";color:var(--gold);font-size:1.15rem;line-height:1;
+    flex:0 0 auto;transition:.2s;
+  }
+  details.q[open] summary::after{content:"–";}
+  details.q p{font-size:.9rem;color:#4b5364;margin-top:.7rem;}
+
+  /* ---------- 页脚 ---------- */
+  footer.site{
+    background:var(--ink);color:#98a0b2;
+    font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+    font-size:.83rem;padding:2.6rem 0 1.6rem;margin-top:1rem;
+  }
+  .foot-grid{
+    display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:2rem;
+    padding-bottom:1.8rem;border-bottom:1px solid rgba(255,255,255,.09);
+  }
+  .foot-grid h4{
+    color:#e6e2d8;font-size:.9rem;letter-spacing:.1em;margin-bottom:.8rem;font-weight:600;
+  }
+  .foot-grid ul{list-style:none;}
+  .foot-grid li{margin-bottom:.42rem;}
+  .foot-grid a:hover{color:var(--gold-2);}
+  .foot-grid p{line-height:1.9;color:#8b93a5;}
+  .copyright{
+    padding-top:1.2rem;display:flex;justify-content:space-between;
+    gap:1rem;flex-wrap:wrap;color:#6f7789;font-size:.78rem;
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:960px){
+    .hero-grid,.split{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+    .masthead-meta{text-align:left;}
+  }
+  @media (max-width:640px){
+    .masthead{padding:2rem 0 1.2rem;}
+    section.block{padding:2.2rem 0;}
+    .foot-grid{grid-template-columns:1fr;gap:1.4rem;}
+    .brand-mark{width:46px;height:46px;font-size:1.2rem;}
+    nav.main a{padding:.85rem .8rem;font-size:.85rem;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>花都捕王 · 都市悬疑探案专题</span>
+    <span class="dim">人物档案 · 案件线索 · 阅读指引</span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap masthead">
+    <div class="brand">
+      <div class="brand-mark">捕</div>
+      <div>
+        <h1>花都捕王</h1>
+        <p>都市悬疑 · 探案群像</p>
+      </div>
+    </div>
+    <div class="masthead-meta">
+      <div>题材：<strong>都市 / 悬疑 / 探案</strong></div>
+      <div>结构：<strong>单元案件 + 主线伏笔</strong></div>
+    </div>
+  </div>
+  <nav class="main">
+    <div class="wrap">
+      <ul>
+        <li><a href="#intro" class="on">作品概览</a></li>
+        <li><a href="#people">人物档案</a></li>
+        <li><a href="#threads">案件线索</a></li>
+        <li><a href="#guide">阅读指引</a></li>
+        <li><a href="#highlights">看点解析</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero" id="intro">
+    <div class="wrap hero-grid">
+      <div>
+        <h2>花都捕王讲的是什么？<em>一城迷案，一人追凶</em></h2>
+        <p class="lead">
+          《花都捕王》是以现代都市为背景的悬疑探案题材作品，围绕一位被称为“捕王”的追凶者展开。
+          故事把繁华都市的表象与暗处的罪案并置，用一个个相对独立的案件串联起人物关系与主线悬念。
+          对于初次接触的读者来说，最关心的通常是三件事：主角是谁、案件怎么推进、从哪里开始看最顺。
+          本页面按这三条线索整理，帮助你快速建立对花都捕王的整体认知。
+        </p>
+        <div class="hero-kv">
+          <span class="kv">都市背景</span>
+          <span class="kv">单元案件</span>
+          <span class="kv">群像人物</span>
+          <span class="kv">主线伏笔</span>
+          <span class="kv">推理追凶</span>
+        </div>
+      </div>
+      <aside class="hero-aside">
+        <h3>快速了解路径</h3>
+        <ol>
+          <li><b>01</b><span>先读作品概览，确认题材与基调是否符合口味</span></li>
+          <li><b>02</b><span>再看人物档案，理清主角与关键配角的关系</span></li>
+          <li><b>03</b><span>通过案件线索板块，理解单元与主线的结构</span></li>
+          <li><b>04</b><span>按阅读指引顺序进入正文，减少情节混淆</span></li>
+        </ol>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 人物档案 -->
+  <section class="block" id="people">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>人物档案</h2>
+        <p>探案类作品的阅读体验，很大程度取决于人物关系是否清晰。以下按叙事功能划分角色类型，便于对照剧情理解。</p>
+      </div>
+      <div class="people">
+        <article class="person">
+          <div class="role">核心主角</div>
+          <h3>捕王</h3>
+          <p>故事的行动核心与视角人物。以追查案件、还原真相为主线目标，性格与过往往往与主线悬念紧密绑定，是理解全篇的关键。</p>
+          <div class="tags"><span>追凶者</span><span>主线枢纽</span><span>视角中心</span></div>
+        </article>
+        <article class="person">
+          <div class="role">协作角色</div>
+          <h3>搭档与同行者</h3>
+          <p>承担信息补充、行动配合与情感支撑的功能。与主角之间既有默契也有分歧，是推动案件前进的重要力量。</p>
+          <div class="tags"><span>配合行动</span><span>信息补充</span><span>关系张力</span></div>
+        </article>
+        <article class="person">
+          <div class="role">信息角色</div>
+          <h3>线人与知情者</h3>
+          <p>通常掌握关键片段信息，出场不多但影响案件走向。其可信度与动机往往需要读者自行判断。</p>
+          <div class="tags"><span>线索来源</span><span>立场存疑</span><span>节点人物</span></div>
+        </article>
+        <article class="person">
+          <div class="role">对立角色</div>
+          <h3>对手与幕后</h3>
+          <p>制造冲突与压力的一方。部分对手在单元案件中登场，部分则隐藏于主线之后，构成长期悬念。</p>
+          <div class="tags"><span>冲突来源</span><span>主线悬念</span><span>层层递进</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 案件线索 -->
+  <section class="block alt" id="threads">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>案件线索结构</h2>
+        <p>都市探案题材常见“单元 + 主线”的双层结构。理解这一结构，能显著降低阅读时的信息负担。</p>
+      </div>
+      <div class="threads">
+        <div class="thread">
+          <h3>单元案件层</h3>
+          <p>每一段案件相对独立，有各自的起因、调查过程与阶段性结论，适合碎片化阅读，也便于随时进入故事。</p>
+          <ul>
+            <li>案件起点：异常事件或委托</li>
+            <li>调查推进：走访、比对、推理</li>
+            <li>阶段收束：真相揭示与后续影响</li>
+          </ul>
+        </div>
+        <div class="thread">
+          <h3>主线悬念层</h3>
+          <p>贯穿全篇的长线疑点，通常与主角的过往、身份或某个未解事件相关，在单元案件中零散埋下伏笔。</p>
+          <ul>
+            <li>反复出现的符号或人物</li>
+            <li>看似无关的细节呼应</li>
+            <li>阶段性揭示与再度反转</li>
+          </ul>
+        </div>
+        <div class="thread">
+          <h3>人物关系层</h3>
+          <p>案件之外，角色之间的信任、隐瞒与选择构成另一条暗线，常常决定关键节点的走向。</p>
+          <ul>
+            <li>信任建立与破裂</li>
+            <li>立场差异带来的分歧</li>
+            <li>共同目标下的临时同盟</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 阅读指引 -->
+  <section class="block" id="guide">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>阅读与观看指引</h2>
+        <p>不同读者对悬疑作品的接受方式不同，以下提供几种常见路径，可按自身习惯选择。</p>
+      </div>
+      <div class="guide">
+        <div class="guide-item">
+          <h3>顺序阅读</h3>
+          <p>按叙事顺序推进，完整体验伏笔铺设与揭示的过程，适合首次接触、希望获得完整悬念体验的读者。</p>
+        </div>
+        <div class="guide-item">
+          <h3>案件优先</h3>
+          <p>先挑选感兴趣的单元案件切入，感受推理节奏，再回头补足人物关系，适合时间零散、偏好单篇故事的读者。</p>
+        </div>
+        <div class="guide-item">
+          <h3>人物切入</h3>
+          <p>先了解主要角色的定位与动机，再进入具体案件，更容易理解人物在关键节点的选择逻辑。</p>
+        </div>
+        <div class="guide-item">
+          <h3>回看复盘</h3>
+          <p>读到主线揭示后回看前文细节，往往能发现此前忽略的呼应，这是悬疑题材的重要乐趣之一。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 看点 + 侧栏 -->
+  <section class="block alt" id="highlights">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>看点解析与内容说明</h2>
+        <p>从题材定位、叙事节奏到人物塑造，梳理花都捕王这类都市探案作品的阅读价值所在。</p>
+      </div>
+      <div class="split">
+        <div class="article-body">
+          <h3>都市背景带来的现实质感</h3>
+          <p>
+            与架空世界不同，都市探案把故事放在读者熟悉的城市环境中：街道、写字楼、旧城区、夜间交通。
+            这种贴近日常的设定，让案件的发生显得更具体，也让“异常”与“日常”之间的反差更强烈。
+            花都捕王的叙事空间正是建立在这样的现实底色之上。
+          </p>
+
+          <h3>推理节奏与信息控制</h3>
+          <p>
+            悬疑探案的核心不是谜题本身，而是信息的释放节奏。什么时候给线索、什么时候给误导、
+            什么时候让读者先于角色察觉异常，直接决定阅读体验。此类作品通常会在以下环节做文章：
+          </p>
+          <ul>
+            <li>以细节铺垫替代直接说明，让读者参与推断；</li>
+            <li>通过角色视角的局限制造信息差；</li>
+            <li>在阶段结论后保留未解释的疑点，维持长线张力。</li>
+          </ul>
+
+          <h3>人物动机比案件更耐读</h3>
+          <p>
+            案件会结束，人物却会延续。优秀的探案故事往往让案件服务于人物：一次调查改变一段关系，
+            一个真相重塑一个选择。花都捕王中主角与同行者之间的信任变化，是支撑读者持续追读的重要动力。
+          </p>
+
+          <h3>关于内容的事实边界</h3>
+          <p>
+            本页面为题材与结构层面的整理说明，不涉及具体情节细节的断言，也不对作品数据、评价或排名作任何结论性表述。
+            不同版本、不同载体在章节划分与内容呈现上可能存在差异，实际内容请以你正在阅读或观看的版本为准。
+          </p>
+        </div>
+
+        <aside>
+          <div class="side-card">
+            <h3>题材要素速览</h3>
+            <ul>
+              <li><span>故事背景</span><span>现代都市</span></li>
+              <li><span>核心类型</span><span>悬疑探案</span></li>
+              <li><span>叙事结构</span><span>单元 + 主线</span></li>
+              <li><span>人物重心</span><span>群像关系</span></li>
+              <li><span>阅读门槛</span><span>较低</span></li>
+            </ul>
+          </div>
+          <div class="side-card">
+            <h3>适合哪些读者</h3>
+            <p class="note">
+              偏好推理与线索拼图的读者、喜欢都市现实背景的读者、关注人物关系与成长线的读者，
+              通常更容易进入这类作品。若更偏好轻松日常或纯恋爱题材，可先试读单元案件再决定是否继续。
+            </p>
+          </div>
+          <div class="side-card">
+            <h3>阅读小提示</h3>
+            <p class="note">
+              悬疑题材建议避免提前查看结局讨论或剧透内容，以免削弱伏笔揭示时的体验。
+              若中途暂停较久，可回顾上一单元的案件结论与人物关系变化再继续。
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>常见问题</h2>
+        <p>整理读者在了解花都捕王时最常提出的疑问，帮助减少信息判断成本。</p>
+      </div>
+      <div class="faq">
+        <details class="q" open>
+          <summary>花都捕王属于什么类型的作品？</summary>
+          <p>从题材定位看，属于以现代都市为背景的悬疑探案类作品，通常包含案件调查、线索推理与人物关系推进等要素，并常以单元案件结合长线主线的方式展开叙事。</p>
+        </details>
+        <details class="q">
+          <summary>没有读过同类作品，能直接看吗？</summary>
+          <p>可以。都市探案题材的单元结构对新手相对友好，从任意一个完整案件切入通常都能读懂。若希望完整感受主线悬念，建议按叙事顺序阅读。</p>
+        </details>
+        <details class="q">
+          <summary>需要记住大量人物才能理解剧情吗？</summary>
+          <p>不必。可以先掌握主角、主要搭档与核心对立角色三类人物，其余角色随着案件推进自然熟悉。人物关系是渐进的，不需要一次性记忆。</p>
+        </details>
+        <details class="q">
+          <summary>单元案件之间有关联吗？</summary>
+          <p>通常存在关联，但关联方式不同：有的通过人物延续，有的通过反复出现的细节呼应主线。即使单独看某个案件，一般也能获得相对完整的阅读体验。</p>
+        </details>
+        <details class="q">
+          <summary>怎样避免被剧透影响体验？</summary>
+          <p>在读完主线揭示前，尽量避开结局讨论、人物最终走向与关键反转的解析内容。若需要参考评价，可优先查看不含具体情节的描述性内容。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>关于本专题</h4>
+        <p>
+          本页面围绕“花都捕王”整理题材定位、人物功能、案件结构与阅读指引，
+          以结构化的方式帮助读者建立整体认知，内容以题材层面的说明为主。
+        </p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#intro">作品概览</a></li>
+          <li><a href="#people">人物档案</a></li>
+          <li><a href="#threads">案件线索</a></li>
+          <li><a href="#guide">阅读指引</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>延伸阅读</h4>
+        <ul>
+          <li><a href="#highlights">看点解析</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#intro">题材要素速览</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>花都捕王 · 都市悬疑探案专题页</span>
+      <span>内容以题材结构说明为主，具体情节请以实际版本为准</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var links = document.querySelectorAll('nav.main a');
+    links.forEach(function(a){
+      a.addEventListener('click', function(){
+        links.forEach(function(x){ x.classList.remove('on'); });
+        a.classList.add('on');
+      });
+    });
+  })();
+</script>
+
+</body>
+            </html>
